@@ -1,0 +1,22 @@
+{
+  "name": "robots-react-native",
+  "version": "1.0.0",
+  "description": "This repo is intended to be a supplement to a talk on Robots and React Native. It is not intended to be stand-alone and function out of the box as the code will contain either fully working code or snips.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottpreston/robots-react-native.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottpreston/robots-react-native/issues"
+  },
+  "homepage": "https://github.com/scottpreston/robots-react-native#readme",
+  "dependencies": {
+    "rxjs": "^5.5.2"
+  }
+}
