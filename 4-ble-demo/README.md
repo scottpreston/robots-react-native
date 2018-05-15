@@ -32,7 +32,7 @@ An overview of the App I'm demoing. Not I'm passing the HM10 object around via P
 
 ### 4 Demo Files
 
-[hm10.js](./hm10.js) - The wrapper for BLE manager.
-[scan.js](./scan.js) - The the UI Component to scan for BLE devices.
-[command.js](./command.js) - The command screen for working with HM10.
-[hm10.js](./hm10.js) - The wrapper for BLE manager.
+* [hm10.js](./hm10.js) - The wrapper for BLE manager.
+* [scan.js](./scan.js) - The the UI Component to scan for BLE devices.
+* [command.js](./command.js) - The command screen for working with HM10.
+* [hm10.js](./hm10.js) - The wrapper for BLE manager.

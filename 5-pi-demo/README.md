@@ -76,7 +76,7 @@ class BadInstagramCloneApp extends Component {
 
 ### 4 Demo Files
 
-[app.js](./app.js) - Sample App.
-[tts.js](./tts.js) - The text to speech component.
-[navigate.js](./navigate.js) - The navigation REST wrapper.
-[express.js](./express.js) - The express endpoint for the Raspberry Pi server.
+* [app.js](./app.js) - Sample App.
+* [tts.js](./tts.js) - The text to speech component.
+* [navigate.js](./navigate.js) - The navigation REST wrapper.
+* [express.js](./express.js) - The express endpoint for the Raspberry Pi server.
