@@ -80,3 +80,43 @@ class BadInstagramCloneApp extends Component {
 * [tts.js](./tts.js) - The text to speech component.
 * [navigate.js](./navigate.js) - The navigation REST wrapper.
 * [express.js](./express.js) - The express endpoint for the Raspberry Pi server.
+
+### Next Steps
+
+1. Time Driven Sequencing. I want to run a diagnostic with commands sequentially. 
+2. Connect `AWS Transcribe` and `AWS Polly`.
+3. Create an App for my Daughter to run one of these bots and do experiments. 
+
+```javascript
+function resolveSometime(cmd, dur) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(cmd());
+    }, dur);
+  });
+}
+
+const command = function(funct, dur) {
+  return { commandFunction: funct, duration: dur };
+};
+
+async function processCommands(cmds) {
+  for (let cmd of cmds) {
+    await resolveSometime(cmd.commandFunction, cmd.duration);
+  }
+}
+
+processCommands([
+  command(() => {
+    console.log("hi there 1", new Date());
+  }, 1000),
+  command(() => {}, 1000), // do nothing
+  command(() => {
+    console.log("hi again 2", new Date());
+  }, 1000)
+]);
+
+```
+
+
+
