@@ -1,1 +1,37 @@
 // arduino sketch
+#include <Servo.h>
+#include <SoftwareSerial.h>
+
+SoftwareSerial BTSerial(10,11); // RX, TX  
+Servo leftServo;
+Servo rightServo;
+
+void setup() {
+  pinMode(7, OUTPUT); 
+  leftServo.attach(2);
+  rightServo.attach(3);
+  leftServo.write(90);  // set servo to mid-point
+  rightServo.write(90);
+  BTSerial.begin(9600); // default baud rate
+
+}
+
+void loop() {
+  byte inBytes[3];
+  if(BTSerial.available()) {
+   BTSerial.readBytes(inBytes,3);
+   if (inBytes[0] == 127) {
+      digitalWrite(7, LOW);
+   }
+   if (inBytes[0] == 255 && inBytes[1] == 0) {
+    digitalWrite(7, HIGH);
+    leftServo.write(inBytes[2]);
+   }
+   if (inBytes[0] == 255 && inBytes[1] == 1) {
+    digitalWrite(7, HIGH);
+    rightServo.write(inBytes[2]);
+   }
+   
+  }
+  delay(10);  
+}
