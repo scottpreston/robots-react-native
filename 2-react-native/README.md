@@ -1,8 +1,8 @@
-## 2. React Native ##
+## 2. React Native
 
 This is an overview of React Native.
 
-### Quick Start - Not Recommended ###
+### Quick Start - Not Recommended
 
 Use the `create-react-native-app` project which uses `Expo`
 
@@ -23,7 +23,7 @@ This is a very fast way to create a `react-native` project but it's not without 
 
 Maybe things are better now (This Is JavaScript), but it was problematic 3 months ago and I've not re-visited.
 
-### Quick Start - Recommended ###
+### Quick Start - Recommended
 
 If you want to work with hardware and deploy to a device, use this method. It's the only
 reliable method I've found over the past 3 months.
@@ -47,7 +47,7 @@ Footnotes:
 * Camera have not tested in the simulator.
 * Sound (React-Native-Sound) will work in simulator.
 
-### React Native Component Overview ###
+### React Native Component Overview
 
 [https://facebook.github.io/react-native/docs/getting-started.html](https://facebook.github.io/react-native/docs/getting-started.html)
 
@@ -61,7 +61,7 @@ For example to show a few you can use:
 </View>
 ```
 
-### WebView - HTML5 Game Example ###
+### WebView - HTML5 Game Example
 
 Create a game component.
 
@@ -86,11 +86,23 @@ But to get this to work on your device you need to copy assets.
 
 `./ios/AwesomeProject/assets/game`, then if they are loaded in `/assets` of the iOS project folder, they can be loaded via the `require`.
 
-### 3rd Party Libraries ###
+### 3rd Party Libraries
 
 You will find that RN provides some core functionality but it's basic, and there's a lot of manual wiring for some components to be useful.
 
 Here's an awesome resource:
 
-[https://github.com/jondot/awesome-react-native](https://github.com/jondot/awesome-react-native) 
+[https://github.com/jondot/awesome-react-native](https://github.com/jondot/awesome-react-native)
+
+### Deploying To Devices
+
+Use this when you want to deploy to your device and test.
+
+```objective-c
+ // simulator
+  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+  
+  // device
+  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+``` 
 

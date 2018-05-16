@@ -1,6 +1,6 @@
-## 1. React & RxJS ##
+## 1. React & RxJS
 
-### Create Your First React App ###
+### Create Your First React App
 
 ```bash
 npm install create-react-app -g
@@ -11,8 +11,8 @@ npm start
 
 Let's Dive into the project.
 
-### What's RxJS ###
+### What's RxJS
 
 This isn't a talk on RxJS. That is a very complicated subject. Instead this is a quick overview of `Observables`.
 
-Let's look at `observable.js` in the code.
+Let's look at [observable.js](./observable.js) in the code.

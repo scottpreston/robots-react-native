@@ -1,4 +1,4 @@
-## 5. PI Robot & Demo ##
+## 5. PI Robot & Demo
 
 An overview of a more sophisticated robot using more Phone Features with React-Native.
 
@@ -107,13 +107,9 @@ async function processCommands(cmds) {
 }
 
 processCommands([
-  command(() => {
-    console.log("hi there 1", new Date());
-  }, 1000),
+  command(() => { console.log("hi there 1", new Date());}, 1000),
   command(() => {}, 1000), // do nothing
-  command(() => {
-    console.log("hi again 2", new Date());
-  }, 1000)
+  command(() => { console.log("hi again 2", new Date()); }, 1000)
 ]);
 
 ```

@@ -1,20 +1,20 @@
-## 3. Robotics Overview ##
+## 3. Robotics Overview
 
 Here's an overview of the hardware I'll discuss today.
 
-### iPhone 5 ###
+### iPhone 5 
 
 ![iphone5|200x200](./iphone5-400.png)
 
-### Genuine Arduino Leonardo ###
+### Genuine Arduino Leonardo 
 
 ![arduino](./arduino.jpg)
 
-### HM10 BLE Module ###
+### HM10 BLE Module 
 
 ![ble](./ble.png)
 
-### Sabertooth Motor Controller ###
+### Sabertooth Motor Controller 
 
 ![saber](./saber.png)
 
